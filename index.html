@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Sidebar Menu</title>
+</head>
+<body class="show-nav">
+  <nav>
+    <div class="avatar">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="user">
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <button id="toggle" class="toggle"><i class="fa fa-bars fa-2x"></i></button>
+    <div class="welcome">
+      <h1>Welcome to my Page</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dignissimos?</p>
+    </div>
+    <button class="signup" id="open">Sign Up</button>
+  </header>
+
+  <div class="container">
+    <h2>Content</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus id eaque temporibus officia sunt ad inventore et vel ipsam repellat eum magnam ex, distinctio, minima magni delectus enim ullam eveniet sed mollitia aperiam vero culpa ab? Vel obcaecati voluptatem perferendis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam neque nemo harum iusto mollitia porro magnam consequatur exercitationem a qui officia in, fugit eum natus, assumenda voluptatum vel laboriosam minus.</p>
+    <h2>What else ?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iste voluptatem repudiandae numquam consequuntur velit facere quae labore ipsum. A unde impedit ipsam ut. Nam consequatur labore omnis ut ad?</p>
+    <h2>What you get </h2>
+    <ul>
+      <li><i class="fas fa-check"></i>Premium access</li>
+      <li><i class="fas fa-check"></i>Strong community support</li>
+      <li><i class="fas fa-check"></i>Technical support 24/7</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam est ratione eos, commodi in sequi, quidem, quis mollitia asperiores dolore illum vel earum aspernatur magni? Reiciendis velit autem quae quisquam eos quo culpa. Dicta facilis ex asperiores illo. Eum impedit recusandae alias mollitia ut omnis enim. Tempora ratione eligendi sunt odio officiis corrupti! Pariatur, distinctio. Minima, quisquam cupiditate eius vitae optio velit pariatur, libero sapiente non cum soluta voluptates ab!</p>
+  
+</div>
+
+
+  <!-- enseñar en dkv , clickar en soy cliente-->
+
+  <div class="modal-container" id="modal">
+    <div class="modal">
+      <button class="close-btn" id="close"><i class="fa fa-times"></i></button>
+      <div class="modal-header">
+        <h3>Sign Up</h3>
+      </div>
+      <div class="modal-content">
+        <h2>register with us ....</h2>
+        <form class="modal-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="enter your name"  class="modalForm-input">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="enter your Email" class="modalForm-input" >
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="enter your password" class="modalForm-input">
+          </div>
+          <div>
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2" placeholder="confirm password" class="modalForm-input">
+          </div>
+          <input type="submit" value="Submit" class="submit-btn">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

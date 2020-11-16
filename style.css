@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #7f847a;
+    --secondary-color: #ddbcb0;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.show-nav {
+    transform: translate(150px);
+}
+
+nav{
+    background-color: var(--secondary-color);
+    border-right: 2px solid gray;
+    color: white;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 150px;
+    min-height: 100vh;
+    z-index: 10;
+    transform: translateX(-100%);
+}
+
+nav .avatar {
+    padding: 30px 0px;
+    text-align: center;
+}
+
+nav .avatar img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    border-bottom: 2px solid gray;
+    padding: 25px;
+}
+
+/* nav ul li:first-of-type {
+    border-top: 2px solid gray;
+} */
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav ul li a:hover{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    /* top:0; */
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+header .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:0.6;
+}
+
+header .welcome h1, p{
+    text-align: center;
+}
+
+button, input[type="submit"]{
+    background-color: var(--secondary-color);
+    border:0;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:focus{
+    outline: none;
+}
+
+.signup {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.container{
+    padding:3rem;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container ul li {
+    list-style-type: none;
+}
+
+.fa-check{
+    color: green;
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.modal-container{
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%
+}
+
+.container >h2 {
+    text-align: center;
+    padding:12px;
+}
+
+.container > p {
+    text-align: left;
+}
+
+.container > ul {
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.modal-container.show-modal{
+    display: block;
+}
+
+.modal{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: relative;
+    top: 45%;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%,-50%);
+    animation-name: modalopen;
+    animation-duration: 2s;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+ .modal > button {
+    position: absolute;
+    top: 0;
+    right:0;
+} 
+ 
+.modal-header{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+.modal-header h3{
+    padding:5px;
+    border-bottom: 1px solid gray;
+}
+
+.modal-content{
+    padding: 20px;
+}
+
+.modal-form div {
+    margin: 15px 0;
+}
+
+.modal-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-form .modalForm-input{
+    padding: 8px;
+    width: 90%;
+}
+
